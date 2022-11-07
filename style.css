@@ -9,6 +9,8 @@
   letter-spacing: 1px;
   /* font-weight: 300; */
   color: #f2f5f7;
+  /* max-width: 1080px; */
+  max-width: 1600x;
 }
 
 html, body {
@@ -29,6 +31,13 @@ button {
   border-radius: 10px;
   border: 2px solid skyblue;
 }
+
+/* .abc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1600px;
+} */
 
 .logo {
   width: 50px;
@@ -308,10 +317,10 @@ address a:hover {
     -webkit-clip-path: circle(50px at 90% -10%);
     transition: all 1s ease-out;
     pointer-events: none;
-    margin-top: 160%;
+   top:48px;
   }
   .nav-links.open {
-    clip-path: circle(1000px at 90% -10%);
+    clip-path: circle(1000px at 70% -10%);
     -webkit-clip-path: circle(1000px at 90% -10%);
     pointer-events: all;
   }
@@ -370,7 +379,7 @@ address a:hover {
 
 .hero {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: #0e3843;
   color: rgb(8, 7, 7);
@@ -618,4 +627,27 @@ address a:hover {
 
 .our_team .team_member .member_img:hover .social_media {
   transform: scale(1);
+}
+
+
+/* Testimonial  */
+
+
+
+
+
+
+/* responsive */
+@media screen and (max-width: 1600px) {
+  .hero{
+    display:flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .hero{
+    display:flex;
+    flex-direction: column;
+  }
 }
