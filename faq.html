@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    
+    <title>FAQs</title>
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            background: #123;
+            font-family: "inter";
+            color: skyblue;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        main {
+            padding: 30px 80px;
+            margin: 0 auto;
+            width: 700px;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        h1 span {
+            font-size: 20px;
+            font-weight: lighter;
+        }
+
+        .container {
+            height: 35px;
+            transition: 1s;
+            /* background: white; */
+            overflow: hidden;
+            position: relative;
+            max-width: 500px;
+            margin-bottom: 20px;
+            /* border-radius: 0 0 10px 10px; */
+            border-bottom: 2px solid rgb(255, 255, 255);
+            cursor: pointer;
+            padding-bottom: 40px;
+            text-overflow: ellipsis;
+
+        }
+
+        .container span {
+            font-family: monospace;
+            font-size: 20px;
+            position: absolute;
+            right: 3px;
+            top: 5px;
+            color: #fff;
+            /* transform: rotate(-90deg); */
+            transition: .5s;
+
+        }
+
+        .container:hover {
+            height: 120px;
+        }
+
+        .container:hover span {
+            transform: rotate(90deg);
+        }
+        .question {
+            font-size: 20px;
+            /* width: 100%; */
+            height: 40px;
+            overflow: hidden;
+            /* padding: 5px 10px; */
+            color: rgb(255, 255, 255);
+            /* background: red; */
+            padding-bottom: 10px;
+            
+        }
+
+        .answer {
+            padding-bottom: 10px;
+        }
+
+        .header100 {
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <script src="header.js">
+
+    </script>
+    <div class="header100">
+        <h1>F <span>to the</span> A <span>to the</span> Q <span>s</span></h1>
+        <p>Here is a list of frequenly asked questions</p>
+    </div>
+    <main>
+        <div class="container">
+            <div class="question">What is blockchain?</div>
+            <div class="answer">a system in which a record of transactions made in bitcoin or another cryptocurrency are maintained across several computers that are linked in a peer-to-peer network.
+            <span><i class="fa-solid fa-angle-right"></i></span>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="question">How can Jamaica Benefit from blockChain?</div>
+            <div class="answer">There are many benefits for Jamaica and the BlockChain technology some of these include, Election, Real Estate, Banking and Transportation.
+            <span><i class="fa-solid fa-angle-right"></i></span>
+            </div>
+        </div>
+
+        
+
+        <div class="container">
+            <div class="question">What is blockchain vs crypto?</div>
+            <div class="answer">A cryptocurrency is a form of digital money. Bitcoin, Ether, Litecoin, and Tether are examples. Units of cryptocurrency are called coins or tokens. A blockchain is a distributed peer-to-peer database that has strict rules for adding data.
+            <span><i class="fa-solid fa-angle-right"></i></span>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="question">Are all cryptocurrency based on blockchain?</div>
+            <div class="answer">Most cryptocurrencies use blockchain technology to record transactions. For example, the bitcoin network and Ethereum network are both based on blockchain.
+            <span><i class="fa-solid fa-angle-right"></i></span>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="question">How long does it take to build a Dapp?</div>
+            <div class="answer">Dapps come in various sizes and extentions, on average it would take 2 months - 6 months but sometimes on rare cases it would take  a year.
+            <span><i class="fa-solid fa-angle-right"></i></span>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="question">Is blockchain the future?</div>
+            <div class="answer">Blockchain is in its embryonic stage and has a lot of scope for evolution in the coming future; with the trend still undiscovered by many, one can find lesser competition in the field in terms of job opportunities.
+            <span><i class="fa-solid fa-angle-right"></i></span>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="question">What will replace blockchain?</div>
+            <div class="answer">Hedera, IOTA, Nano, and a few other ledgers are currently the only projects using acyclic graph technology. Still, we may see that change over time. DAGs are seen by many as an ideal replacement for blockchain, thanks to their enhanced data structure, increased throughput, ease of use, speed, and low fee structure.
+            <span><i class="fa-solid fa-angle-right"></i></span>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="question">Who owns the blockchain?</div>
+            <div class="answer">
+                Summing up. To put it succinctly, nobody owns blockchain technology, and yet, everybody owns it. That is one of the unique features of blockchain tech, and this collective ownership and accountability is what makes blockchains very secure and immutable.
+            <span><i class="fa-solid fa-angle-right"></i></span>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="question">What is the biggest problem with blockchain?</div>
+            <div class="answer">Scalability
+                The redundancy of blockchains makes them hard to scale. Every device in your network must have a copy of every transaction made, right from the genesis block to the most recent transaction. That means hundreds of copies of the same data!
+            <span><i class="fa-solid fa-angle-right"></i></span>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="question">How many Blockchains are there?</div>
+            <div class="answer">There are four main types of blockchain networks: public blockchains, private blockchains, consortium blockchains and hybrid blockchains. Each one of these platforms has its benefits, drawbacks and ideal uses
+            <span><i class="fa-solid fa-angle-right"></i></span>
+            </div>
+        </div>
+
+
+    </main>
+
+    <script src="script.js"></script>
+    <script src="footer.js"></script>
+</body>
+</html>

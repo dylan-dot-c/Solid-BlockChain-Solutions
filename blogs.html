@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs | Solid BlockChain Solutions</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <style>
+
+        body, html {
+            padding: 0; margin: 0;
+            font-family: Inter;
+        }
+
+        header {
+            color: rgb(37, 135, 211);
+            width: 100%;
+            height: 50vh;
+            background-image: url(blockchainpic.webp);
+            background-position: center;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            font-size: 33px;
+            font-family: Inter;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 20px;
+            justify-content: center;
+            /* width: 100%; */
+        }
+
+        .blogpost {
+            max-width: 400px;
+            border: 2px solid rgb(214, 214, 214);
+            /* box-shadow: 0 0 10px black; */
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            transition: .4s;
+        }
+
+        .blogpost:hover {
+            transform: translateY(-10px);
+            background: rgb(221, 221, 221);
+            cursor: pointer;
+            /* box-shadow: 0 0 30px blue; */
+            scale: 0.8;
+        }
+
+        /* .blogpost:hover  */
+
+        .blogpost img {
+            width: 100%;
+        }
+
+        .text {
+            margin-top: -5px;
+            padding: 10px 10px 30px 10px;
+            /* color: grey; */
+            /* font-family: fantasy */
+        }
+
+        .text p {
+            color: rgb(59, 59, 59);
+        }
+
+        .date {
+            /* color: grey; */
+            font-weight: light;
+            color: #fff;
+            font-family: monospace;
+            position: absolute;
+            top: 190px;
+            background: rgba(23,54,65, 0.4);
+            padding: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            /* color: initial; */
+        }
+
+        a h3 {
+            color: black;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .author {
+            position: absolute;
+            bottom: 2px;
+            left: 5px;
+            padding: 10px;
+            font-weight: bold;
+            font-family: monospace;
+            color: black;
+        }
+
+        .readmore {
+            position: absolute;
+            right: 2px;
+            bottom: 2px;
+            color: grey;
+            padding: 10px;
+        }
+
+        .search, input {
+            background: white;
+            color: black;
+            font-size: 20px;
+        }
+
+        .search {
+            padding: 10px;
+            border-radius: 10px;
+        }
+        input:focus {
+            border-bottom: 2px solid rgb(0, 0, 0);
+        }
+
+        input {
+            border: none;
+            outline: none;
+        }
+    </style>
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+
+    <script src="header.js"></script>
+
+    <header>
+        <h1>BlockChain<br />Blogs</h1>
+
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass" style="color: black"></i>
+                        <input type="text" onkeyup="test()" class="search-text" placeholder="search blogs"/>
+        </div>
+    </header>
+
+    <main>
+        <div class="blogpost">
+            <a href="https://www.blockchain.com/blog/welcoming-kingsway-capital-2cd3a1805c25/" >
+            <img src="blogImages/blog5.png" />
+            <div class="text">
+                <span class="date">Oct 14, 2022</span>
+                <h3 class="title">Welcoming Kingsway Capital</h3>
+                <p class="description">Since 2014, BlockChain.com has been fortunate to count many of the world's most prestigious and successful investors as part of ou....</p>
+                
+            </div>
+
+            <span class="author">BlockChain.com</span>
+            <span class="readmore">Read More</span>
+        </a>
+        </div>
+
+        <div class="blogpost">
+            <a href="https://www.blockchain.com/blog/blockchain-brief-solana-sol-e222202b064f/" >
+            <img src="blogImages/blog1.png" />
+            <div class="text">
+                <span class="date">Nov 04, 2022</span>
+                <h3 class="title">BlockChain Brief: Solana (SOL)</h3>
+                <p class="description">This BlockChain Brief is all about Solana (SOL), an energy-efficient, fast, and low-cost blockchain that powers dApps...</p>
+                
+            </div>
+
+            <span class="author">BlockChain.com</span>
+            <span class="readmore">Read More</span>
+
+        </a>
+        </div>
+
+        <div class="blogpost">
+            <a href="https://www.blockchain.com/blog/stablecoins-explained-9dd2c6fcb9ae/">
+            <img src="blogImages/blog3.png" />
+            <div class="text">
+                <span class="date">Oct 32, 2022</span>
+                <h3 class="title">Stablecoins, Explained</h3>
+                <p class="description">Stablecoisn have become an essential part of the ecentralized finance(DeFi) used for trading, purchases, and more.</p>
+                
+            </div>
+
+            <span class="author">BlockChain.com</span>
+            <span class="readmore">Read More</span>
+        </a>
+        </div>
+
+        <div class="blogpost">
+            <a href="https://www.blockchain.com/blog/introducing-the-blockchain-com-visa-card-432e1566ae2a/" >
+            <img src="blogImages/blog2.png" />
+            <div class="text">
+                <span class="date">October 26, 2022</span>
+                <h3 class="title">Introducing the BlockChain.com Visa &reg; Card </h3>
+                <p class="description">You shouldn’t have to pay fees to spend your crypto. It’s yours, after all.
+                    But this isn’t how it works with most crypto cards tod...</p>
+                
+            </div>
+
+            <span class="author">Manjri M</span>
+            <span class="readmore">Read More</span>
+        </a>
+        </div>
+
+        <div class="blogpost">
+            <a href="https://www.blockchain.com/blog/blockchain-brief-gala-games-gala-519f28f943d9/">
+            <img src="blogImages/blog4.png" />
+            <div class="text">
+                <span class="date">Oct 21, 2022</span>
+                <h3 class="title">BlockChain Brief: Gala Games(GALA)</h3>
+                <p class="description">TIn this Blockchain Brief, we cover Gala Games(GALA), an innovative play and earn blockchain based gamimg network. What is GALA?...</p>
+                
+            </div>
+
+            <span class="author">BlockChain.com</span>
+            <span class="readmore">Read More</span>
+        </a>
+        </div>
+
+        <div class="blogpost">
+            <a href="https://www.blockchain.com/blog/bitcoin-explained-91a868c65b27/" >
+            <img src="blogImages/blog6.png" />
+            <div class="text">
+                <span class="date">Oct 14, 2022</span>
+                <h3 class="title">Bitcoin, Explained</h3>
+                <p class="description">Did you know that around 17% of the US adult population now owns bitcoin? there's no denying that crypto has gone mainstream. From mini...</p>
+                
+            </div>
+
+            <span class="author">BlockChain.com</span>
+            <span class="readmore">Read More</span>
+
+            </a>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+    
+    <script>
+// Trying to do a search
+        // const searchBar = document.querySelector('.search-text');
+        // const titles = document.querySelectorAll('.title');
+
+        //     function test() {
+        //         // alert("HEY");
+        //         const text = searchBar.value.toLowerCase();
+        //         // console.log()
+
+        //         for(var i=0; i<titles.length; i++) {
+
+        //         }
+
+        //         // titles.forEach( (item) => {
+        //         //     if(item.innerTEXT.toLowerCase().includes(text)) {
+        //         //         console.log(item.innerTEXT);
+        //         //     }
+
+
+        //         // })
+        //     }
+        
+
+    </script>
+
+
+</body>
+</html>
