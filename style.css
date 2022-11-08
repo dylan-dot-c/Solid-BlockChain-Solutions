@@ -2,9 +2,17 @@
   --main-bg-color: #010101;
 }
 
+/* @font-face {
+  font-family: "Poppins";
+  src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap")
+} */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap'); */
+
 * {
   /* margin: 0;
   padding: 0; */
+  font-family: Poppins;
+  
   box-sizing: border-box;
   letter-spacing: 1px;
   /* font-weight: 300; */
@@ -294,7 +302,7 @@ address a:hover {
 @media screen and (max-width: 800px) {
   nav {
     position: relative;
-    width: 100vw;
+    width: 100%;
     z-index: 3;
   }
   .hamburger {
@@ -374,16 +382,26 @@ address a:hover {
 }
 
 .hero--img {
-  padding-right: 50px;
+  /* padding-right: 50px; */
+  
 }
 
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 5rem;
   background-color: #0e3843;
   color: rgb(8, 7, 7);
   padding: 5rem 2rem;
+}
+
+#about {
+  gap: 0rem;
+}
+
+.hero--text {
+  max-width: 550px;
 }
 
 .hero h2 {
@@ -394,13 +412,20 @@ address a:hover {
 .hero p {
   font-size: 1.2rem;
   max-width: 600px;
-  padding-top: 1.5rem;
+  padding-top: 1rem;
 }
 
 .hero img {
   width: 100%;
   max-width: 800px;
   max-height: 300px;
+  transition: .3s;
+}
+
+.hero img:hover {
+  filter: drop-shadow(0 0 10px #31b0c6);
+  transform: scale(0.9);
+  cursor: pointer;
 }
 
 .hero button {
@@ -442,10 +467,10 @@ address a:hover {
 .single-service {
   position: relative;
   width: 31%;
-  height: 320px;
+  /* height: 320px; */
   background: #fff;
   box-sizing: border-box;
-  padding: 0 15px;
+  padding: 20px 15px;
   transition: 0.5s;
   overflow: hidden;
   float: left;
@@ -640,14 +665,26 @@ address a:hover {
 /* responsive */
 @media screen and (max-width: 1600px) {
   .hero{
-    display:flex;
-    justify-content: space-between;
+    /* display:flex;
+    justify-content: space-between; */
+    
   }
 }
 
 @media screen and (max-width: 820px) {
   .hero{
-    display:flex;
+    /* display:flex; */
     flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 25px;
+  }
+
+  .hero--text {
+    text-align: center;
+  }
+
+  .hero p {
+    padding-top: 0;
+    max-width: 350px;
   }
 }
