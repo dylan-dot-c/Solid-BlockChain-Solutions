@@ -16,6 +16,7 @@ nav.innerHTML = `
         <li><a href="services.html" >Services</a></li>
         <li><a href="team.html" >Team</a></li>
         <li><a href="blogs.html">Blog</a></li>
+        <li title="User Documentation"><a href="https://docs.google.com/document/d/1NCHsagQ89s09_c5y_RQPf36K9ukui2M4yijSeBJp9qo/edit?usp=sharing">Support</a></li>
         <li><a href="contactus.html" ><button class="login-button" >Contact us</button></a></li>
         <li><a href="login-singup.html"><button class="join-button">Join</button></a></li>
       </ul>
